@@ -17,7 +17,7 @@ const LoanRequestForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/loanrequestform', formData);
+            const response = await axios.post('https://bank-management-wtjt.onrender.com/loanrequestform', formData);
             alert('Loan requested succesfully');
             console.log(response.data);
             // Handle success (e.g., show success message)
