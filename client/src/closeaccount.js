@@ -13,7 +13,7 @@ const Closeaccount = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://bank-management-wtjt.onrender.com', formData);
+      const response = await axios.post('https://bank-management-wtjt.onrender.com/closeaccount', formData);
       if (response.data.success) {
         alert('Account deleted successfully');
         setFormData({ email: '' });
