@@ -14,7 +14,7 @@ const TransactionsForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/transactions', formData);
+      const response = await axios.post('https://bank-management-wtjt.onrender.com/transactions', formData);
       // Update state with the fetched transactions
       setTransactions(response.data);
       alert('Transactions fetched successfully');
