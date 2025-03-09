@@ -16,7 +16,7 @@ const LoanRequests = () => {
                 return;
             }
 
-            const response = await axios.get('http://localhost:5000/userloans', {
+            const response = await axios.get('https://bank-management-wtjt.onrender.com/userloans', {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
