@@ -14,7 +14,7 @@ const BalanceForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://bank-management-wtjt.onrender.com', formData);
+      const response = await axios.post('https://bank-management-wtjt.onrender.com/balance', formData);
       // Update state with the fetched balance
       setBalance(response.data);
       alert('Balance fetched successfully');
