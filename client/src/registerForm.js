@@ -21,7 +21,7 @@ const RegisterForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/register', formData);
+            const response = await axios.post('https://bank-management-wtjt.onrender.com/register', formData);
             console.log(response.data);
 
             // Set navigateToLogin to true upon successful registration
