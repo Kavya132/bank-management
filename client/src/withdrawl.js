@@ -14,7 +14,7 @@ const WithdrawlForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/withdrawl', formData);
+      await axios.post('https://bank-management-wtjt.onrender.com/withdrawl', formData);
       alert('Withdrawal successful');
       // Optionally, you can reset the form fields here
       setFormData({ email: '', money: '' });
