@@ -10,7 +10,7 @@ const LoanRequests = () => {
 
     const fetchLoanRequests = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/loanrequests');
+            const response = await axios.get('https://bank-management-wtjt.onrender.com/loanrequests');
             setLoanRequests(response.data);
         } catch (error) {
             console.error('Error fetching loan requests:', error);
