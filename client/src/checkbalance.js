@@ -16,7 +16,7 @@ function Dashboard() {
         return;
       }
 
-      const response = await axios.get('http://localhost:5000/checkbalance', {
+      const response = await axios.get('https://bank-management-wtjt.onrender.com', {
         headers: {
           Authorization: `Bearer ${token}`
         }
