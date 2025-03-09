@@ -21,7 +21,7 @@ const CreateAccountForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/new-account', formData);
+            const response = await axios.post('https://bank-management-wtjt.onrender.com', formData);
             console.log(response.data);
             // Handle success (e.g., show success message)
             setNavigateToDash(true);
