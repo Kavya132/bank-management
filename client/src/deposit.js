@@ -14,7 +14,7 @@ const DepositForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/deposit', formData);
+      await axios.post('https://bank-management-wtjt.onrender.com/deposit', formData);
       alert('Deposit successful');
       // Optionally, you can reset the form fields here
       setFormData({ email: '', money: '' });
