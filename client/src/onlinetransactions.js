@@ -16,7 +16,7 @@ const OnlineTransactions = () => {
                 return;
             }
 
-            const response = await axios.get('http://localhost:5000/onlinetransactions', {
+            const response = await axios.get('https://bank-management-wtjt.onrender.com/onlinetransactions', {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
