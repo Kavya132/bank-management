@@ -23,7 +23,7 @@ const Transfer = () => {
         return;
       }
 
-      const response = await axios.post('http://localhost:5000/transfer', formData, {
+      const response = await axios.post('https://bank-management-wtjt.onrender.com/transfer', formData, {
         headers: {
           Authorization: `Bearer ${token}`
         }
