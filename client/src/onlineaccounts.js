@@ -10,7 +10,7 @@ const AccountRequests = () => {
 
   const fetchAccountRequests = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/onlineaccounts');
+      const response = await axios.get('https://bank-management-wtjt.onrender.com/onlineaccounts');
       setRequests(response.data);
     } catch (error) {
       console.error('Error fetching account requests:', error);
@@ -19,7 +19,7 @@ const AccountRequests = () => {
 
   const handleApprove = async (id) => {
     try {
-      await axios.put(`http://localhost:5000/onlineaccounts/${id}`, { action: 'approve' });
+      await axios.put(`https://bank-management-wtjt.onrender.com/onlineaccounts/${id}`, { action: 'approve' });
       alert('Account approved');
       fetchAccountRequests();
     } catch (error) {
@@ -29,7 +29,7 @@ const AccountRequests = () => {
 
   const handleDecline = async (id) => {
     try {
-      await axios.put(`http://localhost:5000/onlineaccounts/${id}`, { action: 'decline' });
+      await axios.put(`https://bank-management-wtjt.onrender.com/onlineaccounts/${id}`, { action: 'decline' });
       alert('Account declined');
       fetchAccountRequests();
     } catch (error) {
